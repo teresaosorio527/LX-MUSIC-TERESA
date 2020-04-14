@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+      <head>
+            <title>LX MUSIC</title>
+            <meta name="description" content="Techno Festival">
+            <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+            <meta name="author" content="M. Teresa Osório">
+            <meta http-equiv="refresh" content="30">
+            <meta charset="UTF-8">
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="css\mystyle.css">
+
+      </head>
+
+      <body>
+        <header>
+          <a id="menu_icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+</svg>
+</a>
+            <h1>LX MUSIC</h1>
+            <h2> Techno Festival </h2>
+            <p> Um festival que não vais quer perder </p>
+            <div id="drawer">
+<nav>
+<a href="#unordered"> Tudo começou... </a>
+<a href="#ordered"> Lx music</a>
+<a href="#color"> Cartaz do LXM Festival</a>
+<a href="#video"> Video</a>
+<a href="#table"> Tabela</a>
+</nav>
+</div>
+        </header>
+
+        <nav id="tabletPC" class="col-3">
+            <a href="#unordered"> Tudo começou...</a>
+          </br>
+            <a href="#ordered"> Lx music </a>
+            </br>
+            <a href="#color"> Cartaz do LXM Festival</a>
+            </br>
+            <a href="#video"> Video</a>
+            </br>
+            <a href="#table"> Tabela</a>
+        </nav>
+
+
+        <div id="container" class="col-9">
+          <section class="slideshow-container">
+          <h2>HTML Slideshow</h2>
+
+            <article class="mySlides" class="fade">
+            <figure>
+            <img src="imagens/img1.jpg">
+            <figcaption>Figure 1: Running to learn HTML5!</figcaption>
+            </figure>
+            </article>
+
+            <article class="mySlides" class="fade">
+            <figure>
+            <img src="imagens/img2.jpg">
+            <figcaption>Figure 2: Learning HTML5 is too easy...</figcaption>
+            </figure>
+            </article>
+
+            <article class="mySlides" class="fade">
+            <figure>
+            <img src="imagens/img3.jpg">
+            <figcaption>Figure 3: Are you having difficulties with HTML5?</figcaption>
+            </figure>
+            </article>
+
+            <div class="dotpoints">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            </div>
+
+          </section>
+
+        <section>
+          <a name="unordered">
+            <h2> Tudo começou... </h2>
+                <i>No maior evento da LXMUSIC até à data, um evento só possível agora, depois de 14 anos de afirmação e de partilha com Lisboa.</i>
+                   <ul>
+                        <li> O melhor do universo da música eletrónica, </li>
+                        <li> Centenas de artistas,</li>
+                        <li> Conceito adulto, preocupado e responsável,</li>
+                        <li> Evolução das tecnologias e da ciência, </li>
+                        <li> Meios e acessibilidades assegurados.</li>
+                   </ul>
+          </section>
+
+</br>
+</br>
+
+          <section>
+            <a name="ordered">
+            <h2> Desde 2004 que a LX Music tem contribuído para o impulsionar da dance scene da cidade de Lisboa. </h2>
+                <i> Produtora responsável por eventos com artistas de renome da musica electrónica contemporânea </i>
+                   <ol>
+                       <li><u> Fatboy Slim, Jeff Mills, Solomun, Nina Kraviz…</u></li>
+                       <li><u> Garante que cada momento seja uma experiência única, distinta e pessoal. </u></li>
+                   </ol>
+          </section>
+
+
+          <section>
+            <a name="color">
+           <h2>Programação por dias do Cartaz do LXM Festival 2019</h2>
+                   <img src="https://toupeiras.com/wp-content/uploads/2019/11/Programação-por-dias-do-Cartaz-do-LXM-Festival-2019.jpg"  width="400" height="auto">
+                   <img src="imagens/LXMFestival2019_V1.jpg" width="800" height="auto">
+          </section>
+
+</br>
+</br>
+
+          <section>
+                   <a name="video">
+                     <h2> Video </h2>
+                     <p> LXM Festival 2019 - 13th Dec </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CWLV10uOR7w"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+          </section>
+
+</br>
+</br>
+
+          <section>
+            <h2>TABELA</h2>
+            <a name="table">
+
+                  <p> Destalhes em relação ao festival </p>
+                <table border="1px">
+                                    <th colspan="3"> 13-14-15 Dezembro </th>
+                                <tr>
+                                    <td> Bilhete Diário </td> <td> Passe Normal </td> <td> Passe VIP </td>
+                               </tr>
+                               <tr>
+                                   <td rowspan="4"> 30 EUROS </td>
+                                   <td rowspan="3"> 60 EUROS </td>
+                                   <td> 100 EUROS </td>
+                              </tr>
+
+              </table>
+
+            </section>
+
+</div>
+
+
+             <aside class="col-2">
+               <h3>Aside</h3>
+               <p> Esta zona serve para colocar informação menos relevante </p>
+             </aside>
+
+            <footer>
+                 <p> Desenvolved by M. Teresa Osório </p>
+            </footer>
+
+            <script>
+              let slideIndex = 0;
+              showSlides();
+              function showSlides() {
+                let i = null;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+
+                slideIndex++;
+                if (slideIndex> slides.length) {slideIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 3000); // Change image every 3 seconds
+                }
+
+                let menu_icon = document.querySelector('#menu_icon');
+let container = document.querySelector("#container");
+let drawer = document.querySelector('#drawer');
+
+menu_icon.addEventListener('click', function (e) {
+
+drawer.classList.toggle('open');
+e.stopPropagation();
+});
+
+container.addEventListener('click', function () {
+drawer.classList.remove('open');
+});
+              </script>
+
+</body>
+
+</html>
